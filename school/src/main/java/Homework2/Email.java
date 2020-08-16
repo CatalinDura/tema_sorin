@@ -15,4 +15,10 @@ public class Email implements ContactData {
         this.email = email;
     }
 
+    @Override
+    public String toString() {
+        return "Email{" +
+                "email='" + email + '\'' +
+                '}';
+    }
 }

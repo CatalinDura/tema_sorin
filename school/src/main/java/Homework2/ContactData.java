@@ -1,4 +1,6 @@
 package Homework2;
 
-public interface ContactData {
+import java.io.Serializable;
+
+public interface ContactData extends Serializable {
 }

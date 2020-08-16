@@ -9,9 +9,9 @@ public class Main {
         Teacher teacher=new Teacher("Fane","fane@yahoo.com ");
         student1.enroll(course,catalogue);
         student2.enroll(course,catalogue);
-        teacher.addAttendencesForStudent(null,course,catalogue);
         teacher.addAttendencesForStudent(student1,course,catalogue);
-        teacher.addAttendencesForStudent(student2,course,catalogue);
+        teacher.addAttendencesForStudent(student1,course,catalogue);
+        teacher.addAttendencesForStudent(student1,course,catalogue);
         teacher.giveGrade(student1,course,Grade.NINE,catalogue);
         teacher.giveGrade(student2,course,Grade.FOUR,catalogue);
         for(StudentCourseInformation s:catalogue.getStudentsCatalagoue()){

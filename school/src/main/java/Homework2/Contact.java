@@ -1,9 +1,10 @@
 package Homework2;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Contact {
+public class Contact implements Serializable {
     private String name;
     private List<ContactData> data;
 
@@ -12,6 +13,9 @@ public class Contact {
         this.data = new ArrayList<ContactData>();
     }
 
+    public void addContactData(ContactData contactData){
+        data.add(contactData);
+    }
     public String getName() {
         return name;
     }
@@ -26,5 +30,13 @@ public class Contact {
 
     public void setData(List<ContactData> data) {
         this.data = data;
+    }
+
+    @Override
+    public String toString() {
+        return "Contact{" +
+                "name='" + name + '\'' +
+                ", data=" + data +
+                '}';
     }
 }
