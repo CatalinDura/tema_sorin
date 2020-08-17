@@ -12,7 +12,7 @@ public class Storage {
         out.writeObject(adddressBook.getContacts());
         out.close();
         fileOut.close();
-        System.out.printf("Serialized data is saved in AddressBook.serializare");
+        System.out.println("Serialized data is saved in AddressBook.serializare");
         return true;
     }
 
